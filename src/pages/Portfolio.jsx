@@ -1,22 +1,39 @@
 import PortfolioItem from "../components/PortfolioItem";
-
+import comingSoon from "../assets/images/coming_soon.jpg"
 
 const portfolioItems = [
   {
     id: 1,
     name: "Project 1",
-    github: "https://github.com/mhalder4/group-project-1"
-  }
-]
+    image: comingSoon,
+    github: "https://github.com/mhalder4/group-project-1",
+    demo: "Placeholder"
+  },
+  {
+    id: 2,
+    name: "Project 2",
+    image: comingSoon,
+    github: "https://github.com/mhalder4/employee-tracker-challenge",
+    demo: "Placeholder"
+  },
 
+];
+
+const portfolioItemComps = portfolioItems.map(comp => {
+  return <div key={comp.id} className="col-5 my-3">
+    <PortfolioItem id={comp.id} image={comp.image} name={comp.name} github={comp.github} demo={comp.demo} ></PortfolioItem>
+  </div>
+})
+
+// console.log(portfolioItems[0].image)
 
 
 export default function Portfolio() {
   return (
     <main>
-      <div class="test container-fluid row d-flex justify-content-around align-items-center">
-        <div class="col-10 test2 row d-flex justify-content-around align-items-center">
-          <PortfolioItem key={portfolioItems[0].id} name={portfolioItems[0].name} github={portfolioItems[0].github} ></PortfolioItem>
+      <div className="test container-fluid row d-flex justify-content-around align-items-center">
+        <div className="col-10 test2 row d-flex justify-content-around align-items-center">
+          {portfolioItemComps}
         </div>
       </div>
     </main>
