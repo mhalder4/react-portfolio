@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,88 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+* {
+  --navy: #302F4D;
+  --off-white: #EAE0D5;
+  --burnt: #B07156;
+  --bluesteel: #627C85;
+  --blue-green: #096B72;
+
+
+}
+
+body {
+  background-color: var(--bluesteel);
+}
+
+header {
+  background-color: white;
+}
+
+.name {
+  font-size: 5rem;
+  color: var(--navy);
+}
+
+.last {
+  color: var(--blue-green);
+}
+
+.button {
+  border-color: var(--burnt);
+  border-width: 0.25rem;
+
+  height: 50%;
+  width: 9rem;
+
+  background-color: var(--off-white);
+
+  color: var(--burnt);
+}
+
+.button:hover {
+  color: var(--off-white);
+  background-color: var(--burnt);
+}
+
+.img-text {
+  display: none;
+}
+
+.project {
+  width: 100%;
+  /* height: 50%; */
+}
+
+.project:hover {
+  filter: brightness(0.5);
+
+}
+
+.project:hover+.img-text {
+  display: block;
+  color: white;
+  animation: fadeIn 0.5s;
+}
+
+.img-text {
+  pointer-events: none;
+  text-align: center;
+}
+
+.card-body {
+  background-color: var(--off-white);
+  color: var(--burnt);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
