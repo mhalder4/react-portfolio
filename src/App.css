@@ -76,6 +76,14 @@ footer {
   max-width: 3rem;
 }
 
+.title {
+  color: var(--navy)
+}
+
+.test {
+  width: fit-content;
+}
+
 .name {
   font-size: 5rem;
   color: var(--navy);
