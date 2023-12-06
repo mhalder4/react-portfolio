@@ -74,7 +74,7 @@ export default function Portfolio() {
   return (
     <main>
       <div className="test container-fluid row d-flex justify-content-around align-items-center">
-        <h2 className="title col-9 mt-4">Portfolio</h2>
+        <h2 className="title col-9 my-5">Portfolio</h2>
         <div className="col-10 test2 row d-flex justify-content-around align-items-center">
           {portfolioItemComps}
         </div>
