@@ -89,6 +89,41 @@ footer {
   color: var(--burnt);
 }
 
+.form-input {
+  font-size: 2rem;
+  color: var(--navy);
+}
+
+.validation {
+  font-size: 1.5rem;
+  color: var(--navy);
+}
+
+.submit-btn {
+  border-color: var(--navy);
+  border-width: 0.25rem;
+  border-radius: 1rem;
+
+  height: 50%;
+  width: 9rem;
+
+  background-color: white;
+
+  color: var(--navy);
+
+  display: none;
+}
+
+.submit-btn:hover {
+  color: white;
+  background-color: var(--navy);
+}
+
+.submit-btn:disabled {
+  filter: brightness(0.4);
+  pointer-events: none;
+}
+
 .title {
   color: var(--navy);
 }

@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 import './App.css'
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       <Header></Header>
       {/* <Portfolio></Portfolio>
       <About></About> */}
-      <Resume></Resume>
+      {/* <Resume></Resume> */}
+      <Contact></Contact>
 
       <Footer></Footer>
 
