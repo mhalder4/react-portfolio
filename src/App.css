@@ -59,6 +59,23 @@ header {
   background-color: white;
 }
 
+footer {
+  background-color: var(--navy);
+  text-align: center;
+  color: white;
+}
+
+.contact div {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.contact img {
+  max-height: 3rem;
+  max-width: 3rem;
+}
+
 .name {
   font-size: 5rem;
   color: var(--navy);
