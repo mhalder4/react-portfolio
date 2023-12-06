@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
+import Resume from './pages/Resume';
 import './App.css'
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Portfolio></Portfolio>
-      <About></About>
+      {/* <Portfolio></Portfolio>
+      <About></About> */}
+      <Resume></Resume>
 
       <Footer></Footer>
 

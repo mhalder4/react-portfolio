@@ -6,8 +6,8 @@ export default function About() {
   return (
     <>
       <div className="container-fluid d-flex justify-content-around align-items-center my-3">
-        <div className="col-8 container-fluid row about p-4">
-          <div className="col-12 about-title">
+        <div className="col-8 container-fluid row info p-4">
+          <div className="col-12 info-title">
             <h2 className="mb-4">About Me</h2>
           </div>
           <div className="col-4">
