@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-// const portfolioBtnElem = document.querySelector(".portfolio-btn");
 
 export default function Header() {
 
@@ -9,10 +8,10 @@ export default function Header() {
   return (
     <header>
       <nav className="container-fluid row">
-        <div className="col-6">
+        <div className="col-md-6 col-12">
           <h2 className="name">Matt <span className="last">Halder</span></h2>
         </div>
-        <div className="col-6 d-flex justify-content-around align-items-center">
+        <div className="col-md-6 col-12 d-flex justify-content-around align-items-center">
           <Link to="/">
             <button className="button" >
               Portfolio

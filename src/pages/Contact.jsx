@@ -4,27 +4,16 @@ let isEmailValid = false;
 let isMessageValid = false;
 
 export default function Contact(props) {
-  // const submitBtnElem = document.querySelector(".submit-btn");
-  // console.log(submitBtnElem);
-
-
 
 
   const defaultInfo = { name: "", email: "", message: "" }
   const [contactInfo, setContactInfo] = useState(defaultInfo);
 
+  // Handles changing the display whenever something is typed in the form fields
   const handleInputChange = ({ target: { name, value } }) => {
     const submitBtnElem = document.querySelector(".submit-btn");
     const validEmailElem = document.querySelector(".valid-email");
     const validMessageElem = document.querySelector(".valid-message");
-
-    console.log(submitBtnElem);
-    console.log(validEmailElem);
-    console.log(validMessageElem);
-    // console.log(name);
-    // console.log(value);
-
-
 
     setContactInfo({ ...contactInfo, [name]: value })
 
@@ -33,16 +22,13 @@ export default function Contact(props) {
       isEmailValid = emailRegex.test(value);
       isEmailValid ? validEmailElem.setAttribute("style", "display: none") : validEmailElem.setAttribute("style", "display: block");
     }
-    console.log(isEmailValid);
 
     if (name === "message") {
       isMessageValid = !!value;
       isMessageValid ? validMessageElem.setAttribute("style", "display: none") : validMessageElem.setAttribute("style", "display: block");
     }
-    console.log(isMessageValid)
 
-
-
+    // Displays or hides the button depending if email and message are valid
     if (isEmailValid && isMessageValid) {
       console.log("working")
       submitBtnElem.setAttribute("style", "display: block");
@@ -51,8 +37,9 @@ export default function Contact(props) {
     }
   }
 
+  // Handles what to do with the submitted info
   const handleSubmit = () => {
-    console.log(contactInfo)
+    console.log(contactInfo);
   }
 
 

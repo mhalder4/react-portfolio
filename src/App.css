@@ -1,53 +1,9 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-
 * {
-  --navy: #302F4D;
+  --dark-purple: #302F4D;
   --off-white: #EAE0D5;
   --burnt: #B07156;
   --bluesteel: #627C85;
   --blue-green: #096B72;
-
 
 }
 
@@ -60,8 +16,14 @@ header {
   background-color: white;
 }
 
+
+
+
+
+
+/* Footer styling */
 footer {
-  background-color: var(--navy);
+  background-color: var(--dark-purple);
   text-align: center;
   color: white;
   position: fixed;
@@ -84,6 +46,11 @@ footer {
   font-size: 0.5rem;
 }
 
+
+
+
+
+/* About and resume pages styling */
 .info {
   border-style: solid;
   border-radius: 1rem;
@@ -93,18 +60,23 @@ footer {
   color: var(--burnt);
 }
 
+
+
+
+
+/* Contact page styling */
 .form-input {
   font-size: 2rem;
-  color: var(--navy);
+  color: var(--dark-purple);
 }
 
 .validation {
   font-size: 1.5rem;
-  color: var(--navy);
+  color: var(--dark-purple);
 }
 
 .submit-btn {
-  border-color: var(--navy);
+  border-color: var(--dark-purple);
   border-width: 0.25rem;
   border-radius: 1rem;
 
@@ -113,44 +85,53 @@ footer {
 
   background-color: white;
 
-  color: var(--navy);
+  color: var(--dark-purple);
 
   display: none;
 }
 
+
+
+
+
+/* Inverts colors on hover */
 .submit-btn:hover {
   color: white;
-  background-color: var(--navy);
-}
-
-.submit-btn:disabled {
-  filter: brightness(0.4);
-  pointer-events: none;
+  background-color: var(--dark-purple);
 }
 
 .title {
-  color: var(--navy);
+  color: var(--dark-purple);
 }
 
-.test {
-  width: fit-content;
+.project-box {
+  margin-left: 0.25rem;
 }
 
+
+
+
+
+/* Changes name in header */
 .name {
   font-size: 5rem;
-  color: var(--navy);
+  color: var(--dark-purple);
 }
 
 .last {
   color: var(--blue-green);
 }
 
+
+
+
+
+/* Styles buttons in nav bar */
 .button {
   border-color: var(--burnt);
   border-width: 0.25rem;
 
   height: 50%;
-  width: 9rem;
 
   background-color: var(--off-white);
 
@@ -162,8 +143,14 @@ footer {
   background-color: var(--burnt);
 }
 
+
+
+
+/* Formats the image and text animation */
 .img-text {
   display: none;
+  pointer-events: none;
+  text-align: center;
 }
 
 .project {
@@ -186,11 +173,6 @@ footer {
   animation: fadeIn 0.5s;
 }
 
-.img-text {
-  pointer-events: none;
-  text-align: center;
-}
-
 .card-body {
   background-color: var(--off-white);
   color: var(--burnt);
@@ -203,5 +185,17 @@ footer {
 
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project {
+    height: 10rem;
+    width: 15rem;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 }

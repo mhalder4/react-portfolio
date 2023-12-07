@@ -1,6 +1,7 @@
 import PortfolioItem from "../components/PortfolioItem";
 import { flashcards, employeeTrack, social, weather, ecommerce, quiz, passwordGen, other } from "../assets/images/projects";
 
+// Keeps track of the info for the portfolio items
 const portfolioItems = [
   {
     id: 1,
@@ -69,13 +70,12 @@ const portfolioItems = [
 
 ];
 
+// Generates the portfolio item components by looping through the array above
 const portfolioItemComps = portfolioItems.map(comp => {
-  return <div key={comp.id} className="col-5 my-3">
+  return <div key={comp.id} className="col-xl-5 col-12 my-3">
     <PortfolioItem id={comp.id} image={comp.image} name={comp.name} github={comp.github} demo={comp.demo} ></PortfolioItem>
   </div>
 })
-
-// console.log(portfolioItems[0].image)
 
 
 export default function Portfolio() {
@@ -83,9 +83,9 @@ export default function Portfolio() {
 
   return (
     <main>
-      <div className="test container-fluid row d-flex justify-content-around align-items-center">
+      <div className="project-box container-fluid row d-flex justify-content-around align-items-center">
         <h2 className="title col-9 my-5">Portfolio</h2>
-        <div className="col-10 test2 row d-flex justify-content-around align-items-center">
+        <div className="col-10 row d-flex justify-content-around align-items-center">
           {portfolioItemComps}
         </div>
       </div>

@@ -3,7 +3,6 @@ import { githubIcon, playIcon } from "../assets/images/icons"
 
 
 export default function PortfolioItem(props) {
-  // console.log(props);
 
   return (
     <>
