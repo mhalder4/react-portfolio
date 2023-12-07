@@ -1,5 +1,4 @@
-import githubIcon from "../assets/images/github-icon.png"
-import playIcon from "../assets/images/play-button-icon.png"
+import { githubIcon, playIcon } from "../assets/images/icons"
 
 
 
@@ -9,7 +8,7 @@ export default function PortfolioItem(props) {
   return (
     <>
       <div className="portfolio-item">
-        <div className="position-relative border border-dark">
+        <div className="position-relative">
           <img src={`${props.image}`} className="project" type="button" data-bs-toggle="collapse"
             data-bs-target={`#collapse-${props.id}`} aria-expanded="false" aria-controls="collapseExample" />
 
@@ -21,8 +20,8 @@ export default function PortfolioItem(props) {
         </div>
         <div className="collapse" id={`collapse-${props.id}`}>
           <div className="card card-body">
-            Repo<a href={`${props.github}`}><img src={githubIcon} alt="A GitHub icon"></img></a>
-            See this project in action!<a href={`${props.demo}`}><img src={playIcon} alt="A play button icon"></img></a>
+            Repo<a href={`${props.github}`} target="_blank"><img src={githubIcon} alt="A GitHub icon"></img></a>
+            See this project in action!<a href={`${props.demo}`} target="_blank"><img src={playIcon} alt="A play button icon"></img></a>
           </div>
         </div>
       </div>

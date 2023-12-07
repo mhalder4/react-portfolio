@@ -3,7 +3,7 @@ import { useState } from "react";
 let isEmailValid = false;
 let isMessageValid = false;
 
-export default function Contact() {
+export default function Contact(props) {
   // const submitBtnElem = document.querySelector(".submit-btn");
   // console.log(submitBtnElem);
 
@@ -53,10 +53,9 @@ export default function Contact() {
 
   const handleSubmit = () => {
     console.log(contactInfo)
-    // Need to send to email
-
-
   }
+
+
 
   return (
     <>

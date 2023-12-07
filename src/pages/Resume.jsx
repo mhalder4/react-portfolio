@@ -1,7 +1,9 @@
 
 
 
-export default function Resume() {
+export default function Resume(props) {
+
+
 
   return (
     <>

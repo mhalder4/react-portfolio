@@ -1,3 +1,4 @@
-// import comingSoon from "./coming_soon.jpg"
+// export { default as icons } from "./icons";
+// export { default as projectPhotos } from "./projects";
 
-// export {comingSoon}
+// export { icons, projectPhotos };

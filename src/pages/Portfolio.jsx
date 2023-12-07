@@ -1,70 +1,70 @@
 import PortfolioItem from "../components/PortfolioItem";
-import comingSoon from "../assets/images/coming_soon.jpg"
+import { flashcards, employeeTrack, social, weather, ecommerce, quiz, passwordGen, other } from "../assets/images/projects";
 
 const portfolioItems = [
   {
     id: 1,
-    name: "Flash Cars for Students",
-    image: comingSoon,
-    alt: "",
+    name: "Flash Cards for Students",
+    image: flashcards,
+    alt: "A picture of the Flash Card for Students project.",
     github: "https://github.com/mhalder4/flash-card-database",
-    demo: "Placeholder"
+    demo: "https://flash-card-database-b48354848dbb.herokuapp.com/"
   },
   {
     id: 2,
-    name: "Project 2",
-    image: comingSoon,
-    alt: "",
+    name: "CLI Employee Tracker",
+    image: employeeTrack,
+    alt: "A picture of the CLI Employee Tracker project.",
     github: "https://github.com/mhalder4/employee-tracker-challenge",
-    demo: "Placeholder"
+    demo: "https://drive.google.com/file/d/1GXFzdpQtn0_gBqiX7UaQpLUda8VCbMpJ/view"
   },
   {
     id: 3,
-    name: "Project 1",
-    image: comingSoon,
-    alt: "",
-    github: "https://github.com/mhalder4/group-project-1",
-    demo: "Placeholder"
+    name: "Mongo Social Network API",
+    image: social,
+    alt: "A picture of the Mongo Social Network API project.",
+    github: "https://github.com/mhalder4/social-network-api-challenge",
+    demo: "https://drive.google.com/file/d/1Nk23D1FDd4cQxP7wuKR7OMISHndOqojp/view"
   },
   {
     id: 4,
-    name: "Project 2",
-    image: comingSoon,
-    alt: "",
-    github: "https://github.com/mhalder4/employee-tracker-challenge",
-    demo: "Placeholder"
+    name: "Third-Party API Weather Dashboard",
+    image: weather,
+    alt: "A picture of the Third-Party API Weather Dashboard project.",
+    github: "https://github.com/mhalder4/weather-dashboard-challenge",
+    demo: "https://mhalder4.github.io/weather-dashboard-challenge/"
   },
   {
     id: 5,
-    name: "Project 1",
-    image: comingSoon,
-    alt: "",
-    github: "https://github.com/mhalder4/group-project-1",
-    demo: "Placeholder"
+    name: "MySQL E-Commerce API",
+    image: ecommerce,
+    alt: "A picture of the MySQL E-Commerce API project.",
+    github: "https://github.com/mhalder4/ecommerce-back-end-challenge",
+    demo: "https://drive.google.com/file/d/17sU_sRHurHT53oKL7Dn7k_M121vyu0Dr/view"
   },
   {
     id: 6,
-    name: "Project 2",
-    image: comingSoon,
-    alt: "",
-    github: "https://github.com/mhalder4/employee-tracker-challenge",
-    demo: "Placeholder"
+    name: "Coding Quiz",
+    image: quiz,
+    alt: "A picture of the Coding Quiz project.",
+    github: "https://github.com/mhalder4/coding-quiz-challenge",
+    demo: "https://mhalder4.github.io/coding-quiz-challenge/"
   },
   {
     id: 7,
-    name: "Project 1",
-    image: comingSoon,
-    alt: "",
-    github: "https://github.com/mhalder4/group-project-1",
-    demo: "Placeholder"
+    name: "Random Pasword Generator",
+    image: passwordGen,
+    alt: "A picture of the Random Pasword Generator project.",
+    github: "https://github.com/mhalder4/password-generator-challenge",
+    demo: "https://mhalder4.github.io/password-generator-challenge/"
   },
   {
     id: 8,
-    name: "Project 2",
-    image: comingSoon,
-    alt: "",
-    github: "https://github.com/mhalder4/employee-tracker-challenge",
-    demo: "Placeholder"
+    name: "I have other projects as well!",
+    image: other,
+    alt: "A picture of a pencil on a yellow background.",
+    github: "https://github.com/mhalder4?tab=repositories",
+    demo: "https://github.com/mhalder4?tab=repositories"
   },
 
 ];
@@ -79,6 +79,8 @@ const portfolioItemComps = portfolioItems.map(comp => {
 
 
 export default function Portfolio() {
+
+
   return (
     <main>
       <div className="test container-fluid row d-flex justify-content-around align-items-center">

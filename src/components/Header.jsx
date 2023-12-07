@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
-export default function Header(props) {
+// const portfolioBtnElem = document.querySelector(".portfolio-btn");
+
+export default function Header() {
+
+
 
   return (
     <header>
@@ -15,7 +19,7 @@ export default function Header(props) {
             </button>
           </Link>
           <Link to="/about">
-            <button className="button">
+            <button className="button" >
               About Me
             </button>
           </Link>
