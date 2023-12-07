@@ -9,11 +9,11 @@ This project is a portfolio of my work using React. React code is used to displa
 - [Questions](#questions)
 - [Tests](#tests)
 ## Installation
-The pertinent files for the project, including this README can all be found in the Github repository located at: https://github.com/mhalder4/react-portfolio. The website can be found at the Github pages address that follows: https://mhalder4.github.io/coding-quiz-challenge/.
+The pertinent files for the project, including this README can all be found in the Github repository located at: https://github.com/mhalder4/react-portfolio. The website can be found at the address that follows: https://cerulean-praline-17445a.netlify.app/.
 ## Usage
 Once the page is opened, the user is shown a handful of projects I have completed. If they hover over and then click on one, they will see links to the GitHub repo for that project and either the project itself or a demo of the project. The user can also click on the buttons in the top right to navigate around the site. The About Me and Resume pages show some text while the Contact Me page has form fields that can be input in to send me a message (not yet implemented). There are also links to my GittHub profile and Gmail at the bottom of every page.
 
-![A screenshot of the completed webpage.](./assets/images/my_portfolio_screenshot.png)
+![A screenshot of the completed webpage.](./src/assets/images/projects/react-portfolio.png)
 
 
 
