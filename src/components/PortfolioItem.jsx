@@ -1,4 +1,5 @@
-
+import githubIcon from "../assets/images/github-icon.png"
+import playIcon from "../assets/images/play-button-icon.png"
 
 
 
@@ -20,8 +21,8 @@ export default function PortfolioItem(props) {
         </div>
         <div className="collapse" id={`collapse-${props.id}`}>
           <div className="card card-body">
-            <a href={`${props.github}`}>GitHub Repo</a>
-            <a href={`${props.demo}`}>See this project in action!</a>
+            Repo<a href={`${props.github}`}><img src={githubIcon} alt="A GitHub icon"></img></a>
+            See this project in action!<a href={`${props.demo}`}><img src={playIcon} alt="A play button icon"></img></a>
           </div>
         </div>
       </div>

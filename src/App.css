@@ -80,6 +80,10 @@ footer {
   max-width: 3rem;
 }
 
+.small-print {
+  font-size: 0.5rem;
+}
+
 .info {
   border-style: solid;
   border-radius: 1rem;

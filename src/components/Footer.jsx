@@ -1,5 +1,5 @@
-import githubLogo from "../assets/images/github_icon.png";
-import gmailLogo from "../assets/images/gmail_icon.png";
+import githubLogo from "../assets/images/github-icon.png";
+import gmailLogo from "../assets/images/gmail-icon.png";
 
 export default function Footer() {
 
@@ -16,7 +16,10 @@ export default function Footer() {
           </section>
         </div>
       </section>
-      &copy; 2023 Matthew Halder
+      <div className="small-print">
+        &copy; 2023 Matthew Halder <br />
+        All icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </div>
     </footer>
   )
 }

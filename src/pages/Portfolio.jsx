@@ -4,15 +4,17 @@ import comingSoon from "../assets/images/coming_soon.jpg"
 const portfolioItems = [
   {
     id: 1,
-    name: "Project 1",
+    name: "Flash Cars for Students",
     image: comingSoon,
-    github: "https://github.com/mhalder4/group-project-1",
+    alt: "",
+    github: "https://github.com/mhalder4/flash-card-database",
     demo: "Placeholder"
   },
   {
     id: 2,
     name: "Project 2",
     image: comingSoon,
+    alt: "",
     github: "https://github.com/mhalder4/employee-tracker-challenge",
     demo: "Placeholder"
   },
@@ -20,6 +22,7 @@ const portfolioItems = [
     id: 3,
     name: "Project 1",
     image: comingSoon,
+    alt: "",
     github: "https://github.com/mhalder4/group-project-1",
     demo: "Placeholder"
   },
@@ -27,6 +30,7 @@ const portfolioItems = [
     id: 4,
     name: "Project 2",
     image: comingSoon,
+    alt: "",
     github: "https://github.com/mhalder4/employee-tracker-challenge",
     demo: "Placeholder"
   },
@@ -34,6 +38,7 @@ const portfolioItems = [
     id: 5,
     name: "Project 1",
     image: comingSoon,
+    alt: "",
     github: "https://github.com/mhalder4/group-project-1",
     demo: "Placeholder"
   },
@@ -41,6 +46,7 @@ const portfolioItems = [
     id: 6,
     name: "Project 2",
     image: comingSoon,
+    alt: "",
     github: "https://github.com/mhalder4/employee-tracker-challenge",
     demo: "Placeholder"
   },
@@ -48,6 +54,7 @@ const portfolioItems = [
     id: 7,
     name: "Project 1",
     image: comingSoon,
+    alt: "",
     github: "https://github.com/mhalder4/group-project-1",
     demo: "Placeholder"
   },
@@ -55,6 +62,7 @@ const portfolioItems = [
     id: 8,
     name: "Project 2",
     image: comingSoon,
+    alt: "",
     github: "https://github.com/mhalder4/employee-tracker-challenge",
     demo: "Placeholder"
   },
